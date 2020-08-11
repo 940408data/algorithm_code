@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 下一级的pycache
+*/__pycache__/
+
+# logs
+logs/*.log
+
+# test测试目录
+test/
+

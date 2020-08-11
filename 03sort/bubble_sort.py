@@ -11,6 +11,7 @@
 '''
 
 # here put the import lib
+import random
 
 def bubble_sort(li):
     for i in range(len(li)-1):   # 第i趟排序，总共要进行i-1趟
@@ -32,13 +33,15 @@ def bubble_sort1(li):
             if li[j]>li[j+1]:  # 升序排序，if要降序，则li[j]<li[j+1]
                 li[j],li[j+1]=li[j+1],li[j]  # 交换元素
                 exchange=True
-        print(i,li)
+        # print(i,li)
         if not exchange:
             return
 
 l=[4,5,3,1,8,6,7,9,2]
 l1=[8,6,9,7,1,2,3,4,5]
+l2=list(range(10000))
+random.shuffle(l2)
 
-print(f"原始序列：{l1}")
-bubble_sort1(l1)
+# print(f"原始序列：{l1}")
+bubble_sort1(l2) 
 
