@@ -15,7 +15,7 @@
 def select_sort(li):
     for i in range(len(li)-1):  # 第i趟，总共进行n-1趟
         min_loc=i       # 假设无序区中的最小值在无序区的首位
-        for j in range(i,len(li)):   # 进行无序区最小值的确定(无序区的范围为i到n)
+        for j in range(i+1,len(li)):   # 进行无序区最小值的确定(无序区的范围为i到n)
             if li[j] < li[min_loc]:
                 li[j],li[min_loc]=li[min_loc],li[j] # 最小值和无序区的首位元素进行交换
         print(li)
