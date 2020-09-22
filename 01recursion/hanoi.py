@@ -14,10 +14,12 @@
 
 def hanoi(n,a,b,c):
     if n==1:
-        print(f"moving from  {a} to {c}")
+
+        print(f"第{n}层:moving from  {a} to {c}")
     if n>1:
-        hanoi(n-1,a,c,b)
-        print(f"moving from  {a} to {c}")
+        hano
+        i(n-1,a,c,b)
+        print(f"第{n}层:moving from  {a} to {c}")
         hanoi(n-1,b,a,c)
     
 # hanoi(3,"A","B","C")

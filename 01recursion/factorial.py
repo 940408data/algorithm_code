@@ -15,7 +15,10 @@ def ft(n):
     if n==1:
         return 1
     elif n>1:
-        return n*ft(n-1)
+        print(n)
+        # return n*ft(n-1)
+        ft(n-1)
+        # print(n)
     else:
         print("非法的输入")
-print(ft(-1))
+print(ft(6))

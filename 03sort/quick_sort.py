@@ -17,9 +17,11 @@ def quick_sort(li,left,right):
         quick_sort(li,left,mid-1)  # 对左边进行递归
         print("right",right)
         print("left",left)
+        print("左")
         quick_sort(li,mid+1,right) # 对右边进行递归
         print("left",left)
         print("right",right)
+        print("右")
     # left=riht 递归就完成了
     
 
@@ -42,11 +44,13 @@ def partition(li,left,right):
         # print(f"右边第{right}空位填充完毕:{li}")
 
     li[left]=tmp   # 归位，此时left=right
+    print(li)
     return left # 把归位的位置返回给mid
 
 
-l=[5,3,7,4,8,2,9,6,1]
+l=[5,3,7,4,8]
 # print("原始序列",l)
 # partition(l,0,len(l)-1)
+print("原始序列",l)
 quick_sort(l,0,len(l)-1)
 print(l)
